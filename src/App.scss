@@ -8,6 +8,8 @@ body {
   font-family: "Rubik Storm", cursive;
   background-image: $bgImg;
   min-height: 100vh;
+  background-attachment: fixed;
+  padding: 1rem;
 }
 
 p {
