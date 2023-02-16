@@ -1,0 +1,52 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $cardNavBgColor;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  .logo {
+    img {
+      width: 70px;
+    }
+  }
+  .links {
+    display: flex;
+    gap: 0.5rem;
+    padding-right: 0.4rem;
+    justify-content: flex-end;
+
+    a {
+      padding: 0.2rem;
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: $secondaryColor;
+      text-transform: uppercase;
+      transition: 0.3s;
+      border-radius: 0.4rem;
+      &:hover {
+        background-color: $secondaryColor;
+        color: $cardNavBgColor;
+        cursor: pointer;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}
+
+@include media-xsm {
+  .links {
+    flex-direction: column;
+  }
+}
+
+@include media-lg {
+  .links {
+    flex-direction: row;
+  }
+}
