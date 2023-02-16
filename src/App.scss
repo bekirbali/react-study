@@ -1,0 +1,15 @@
+@import "./scss/reset";
+@import "./scss/variables";
+@import "./scss/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap");
+
+body {
+  font-family: "Rubik Storm", cursive;
+  background-image: $bgImg;
+  min-height: 100vh;
+}
+
+p {
+  font-family: "Almendra Display", cursive;
+}
